@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/babyBlue">
+    android:background="@color/babyBlue"
+    android:id="@+id/layout3">
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +15,7 @@
         android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/smallLength"
-        android:text="@string/greeting5"
+        android:text="@string/layoutLabel3"
         app:layout_constraintLeft_toLeftOf="@id/vertGuideline"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,5 +52,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@color/darkBlue"
         android:textColor="@color/white"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/smallLength"
+        android:layout_height="@dimen/smallLength"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        android:text="Randomize layout!"
+        android:onClick="randomize"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

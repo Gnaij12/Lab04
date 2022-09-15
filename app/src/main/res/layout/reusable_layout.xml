@@ -73,6 +73,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Check me!"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/smallLength"
+                android:layout_height="@dimen/smallLength"
+                android:background="@color/teal_700"
+                android:text="Randomize layout!"
+                android:onClick="randomize"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

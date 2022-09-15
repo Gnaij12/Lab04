@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/babyBlue"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout5">
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="@dimen/largeLength"
@@ -29,4 +30,12 @@
             android:textSize="20dp"
             android:textColor="@color/white"/>
     </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/largeLength"
+        android:layout_height="@dimen/smallLength"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/babyBlue"
+        android:text="Randomize layout!"
+        android:onClick="randomize"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
